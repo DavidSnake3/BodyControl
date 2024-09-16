@@ -1,0 +1,68 @@
+.about-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+.about-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('') no-repeat center center;
+    background-size: cover;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.highlight {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+.feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff4500;
+}
+.btn-custom {
+    background-color: #ff6b6b;
+    border-color: #ff4500;
+    color: white;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #e63900;
+    border-color: #e63900;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+
+@media (max-width: 992px) {
+    .about-section .row {
+        flex-direction: column;
+    }
+    
+    /* Centrar el texto y ajustar el espaciado en pantallas pequeñas */
+    .about-text {
+        text-align: center;
+        margin-bottom: 20px; /* Espacio entre texto y la imagen */
+    }
+    
+    /* Asegúrate de que la imagen esté debajo */
+    .about-image {
+        position: relative; /* Cambiar de absolute para que no se solape */
+        width: 100%; /* Ocupa el 100% del ancho del contenedor */
+        height: 300px; /* Altura ajustada para pantallas pequeñas */
+        clip-path: none; /* Quita el clip en pantallas pequeñas si lo deseas */
+        background-size: cover;
+        margin-top: 20px; /* Espacio superior entre la imagen y el contenido */
+    }
+}

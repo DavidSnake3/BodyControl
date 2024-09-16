@@ -1,0 +1,32 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-image: url('Img/foto.webp'); /* Cambia esta URL a tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden; /* Asegura que el desenfoque no se extienda fuera del header */
+}
+
+/* Efecto de desenfoque */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 39, 39, 0.5); /* Fondo blanco con opacidad para ver si el pseudo-elemento se muestra */
+    backdrop-filter: blur(px); /* Ajusta el valor del blur según tu preferencia */
+     /* Asegura que el desenfoque esté detrás del contenido del header */
+}
+
+/* Estilo del logo */
+.header .logo {
+    height: 150px; /* Ajusta la altura según tus necesidades */
+    margin-right: 230px; /* Asegura que el logo tenga un margen derecho si es necesario */
+}

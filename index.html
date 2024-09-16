@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Empresa - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navigation.css"> <!-- Archivo externo de estilos -->
+    <link rel="stylesheet" href="carrusel.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="nosotros.css">
+   
+</head>
+<body>
+    <div class="header">
+        <img src="Img/LogoBodyControl.jpg" alt="Logo" class="logo">
+
+    </div>
+     <!-- Navegación -->
+  <div class="navigation"> 
+    <ul>
+        <li class="list active">
+            <a href="#inicio">
+                <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                </span>
+                <span class="text">Inicio</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#about-section">
+                <span class="icon">
+                    <ion-icon name="accessibility-outline"></ion-icon>
+                </span>
+                <span class="text">Nosotros</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#planes">
+                <span class="icon">
+                    <ion-icon name="barbell-outline"></ion-icon>
+                </span>
+                <span class="text">Planes</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#blog">
+                <span class="icon">
+                    <ion-icon name="chatbox-outline"></ion-icon>
+                </span>
+                <span class="text">Blog</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#contacto">
+                <span class="icon">
+                    <ion-icon name="id-card-outline"></ion-icon>
+                </span>
+                <span class="text">Contacto</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#acercade">
+                <span class="icon">
+                    <ion-icon name="information-circle-outline"></ion-icon>
+                </span>
+                <span class="text">Acerca de</span>
+            </a>
+        </li>
+        <li class="list">
+            <a href="#preguntas">
+                <span class="icon">
+                    <ion-icon name="help-outline"></ion-icon>
+                </span>
+                <span class="text">Preguntas frecuentes</span>
+            </a>
+        </li>
+        <div class="indicator"></div>
+        
+    </ul>
+  </div>
+
+ <!-- Contenido principal -->
+ <div class="video-container">
+    <video class="d-block w-100" autoplay muted loop>
+        <source src="Img/Videoweb.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de videos.
+    </video>
+    <div class="carousel-caption animate__animated animate__fadeIn">
+        <h2>Tu Mejor Versión Empieza Aquí</h2>
+        <p>Da el primer paso hacia un estilo de vida saludable y activo con nosotros</p>
+        <a href="#" class="btn btn-gym">Únete a nuestra comunidad</a>
+    </div>
+</div>
+
+
+ <!-- Nueva sección Nosotros -->
+ <section class="about-section">
+    <div class="container-fluid content-wrapper">
+        <div class="row align-items-center">
+            <div class="col-lg-6 about-text text-end"> <!-- Alineado a la derecha -->
+                <h2 class="display-4 mb-4">Sobre <span class="highlight">Body Control</span></h2>
+                <p class="lead mb-4 justify-text">En Body Control, creemos que cada persona tiene el potencial de alcanzar su mejor versión física y mental. Nuestra misión es proporcionar un ambiente inspirador y las herramientas necesarias para que logres tus objetivos de fitness.</p>
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3 text-center">
+                        <i class="bi bi-trophy feature-icon"><ion-icon name="flame-outline"></ion-icon></i>
+                        <h4>Experiencia</h4>
+                        <p>Más de 10 años transformando vidas a través del fitness.</p>
+                    </div>
+                    <div class="col-md-6 mb-3 text-center">
+                        <i class="bi bi-people feature-icon"><ion-icon name="people-circle-outline"></ion-icon></i>
+                        <h4>Comunidad</h4>
+                        <p>Una familia de más de 5,000 miembros motivados y apasionados.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-6 about-image-wrapper">
+                <div class="about-image">
+                    <img src="Img/img2.jpg" alt="Nuestro equipo" class="background-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Enlace al script de navegación externo -->
+  <script src="navigation.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
